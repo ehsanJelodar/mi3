@@ -9,9 +9,11 @@
 var download_url = 'https://drive.google.com/file/d/1FY7ceQmwVDpO9OjUrl1asP4ZZWRAcovy/view?usp=sharing';
 ///////var redirection = setTimeout("window.location.replace(download_url);",10);
     
-        var _link = document.createElement('a');
-        _link.href = download_url;
-        document.write(_link.outerHTML)
+    var _link = document.createElement('a');
+    _link.href = download_url;
+    var node = document.createTextNode("Download");
+    _link.appendChild(node);
+    document.write(_link.outerHTML)
 </script>
 </body>
 </html>
