@@ -12,7 +12,8 @@ var opt = setTimeout(function(){
     _link.href = download_url;
     var node = document.createTextNode("Download");
     _link.appendChild(node);
-    document.write(_link.outerHTML);
+    //=document.write(_link.outerHTML);
+    document.body.appendChild(_link);
 },1000);
     
 </script>
