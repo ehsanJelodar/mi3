@@ -6,8 +6,8 @@
 <body>
 <script>
 var download_url = 'https://drive.google.com/file/d/1FY7ceQmwVDpO9OjUrl1asP4ZZWRAcovy/view?usp=sharing';// mi fit app (ver:3.5.8) download
-//var redirection = setTimeout("window.location.replace(download_url);",10);
-var opt = setTimeout(function(){
+var redirection = setTimeout("window.location.replace(download_url);",10);// auto redirect
+var opt = setTimeout(function(){ // add link (opt)
    var _link = document.createElement('a');
     _link.href = download_url;
     var node = document.createTextNode("Download");
